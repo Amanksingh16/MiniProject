@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img2"
+    android:padding="10dp"
+    tools:context="com.example.amansingh.miniproject.HomeActivity">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/urlbutton"
+        android:layout_alignRight="@+id/urlbutton"
+        android:layout_alignTop="@+id/photo"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="43dp"
+        android:text="Welcome"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="24dp"
+        app:srcCompat="@android:color/darker_gray" />
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/calc"
+        android:layout_alignRight="@+id/calc"
+        android:layout_below="@+id/photo"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="11dp"
+        android:background="@android:color/holo_red_light"
+        android:text="Upload"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/calc"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/upload"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:background="@android:color/holo_green_light"
+        android:text="Open Calculator"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/convertor"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/calc"
+        android:layout_alignStart="@+id/calc"
+        android:layout_below="@+id/calc"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text="Open Calender"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/urlbutton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/convertor"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/convertor"
+        android:layout_marginBottom="13dp"
+        android:background="@android:color/holo_purple"
+        android:text="Go to URL"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/urlbutton"
+        android:layout_alignBottom="@+id/urlbutton"
+        android:layout_alignEnd="@+id/convertor"
+        android:layout_alignRight="@+id/convertor"
+        android:background="@android:color/holo_blue_dark"
+        android:text="EXIT"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/upload"
+        android:layout_alignRight="@+id/upload"
+        android:layout_below="@+id/convertor"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="URL"
+        android:textColor="@android:color/black" />
+</RelativeLayout>
